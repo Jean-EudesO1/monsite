@@ -1,0 +1,253 @@
+p{
+    color:rgb(34, 32, 32);
+}
+.maclasse{
+    color:#f0e7e7;
+    background-color: #283618;
+    
+}
+h1 {
+
+    text-align : center;
+    color: black;
+    background-image: url("pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    width: 100%;
+    height: 200px;
+   
+  }
+  
+  ol {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em;
+  }
+  h1 {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  h1 {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  h1 {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+ img:hover {
+    opacity : 0.6 ; 
+ }
+ a:hover {
+    color : deeppink ; 
+ }
+ a:active {
+  text-decoration-color: #283618;
+ }
+ .g1{
+  display: block;
+  background-color: aqua;
+  width: 50px;
+ }
+ 
+  .ligne {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+.box {
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 0; /* Suppression du padding pour que l'image prenne tout l'espace */
+  background-color: white;
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  
+  /* Nouvelles propriétés pour les images */
+  overflow: hidden; /* Cache les parties d'images qui dépassent */
+}
+
+/* Style pour toutes les images dans les conteneurs */
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* L'image remplit le conteneur en gardant ses proportions */
+  object-position: center; /* Centre l'image */
+  border-radius: 8px; /* Même rayon que le conteneur pour suivre les bords */
+}
+
+/* Alternative si vous voulez que l'image s'étire pour remplir exactement le conteneur */
+.box img.stretch {
+  object-fit: fill; /* Étire l'image pour remplir exactement le conteneur */
+}
+
+/* Alternative si vous voulez garder l'image entière visible */
+.box img.contain {
+  object-fit: contain; /* Garde l'image entière visible avec des barres noires si nécessaire */
+}
+
+.box:not(.seven):hover {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
+.one {
+  width: 400px;
+  height: 500px;
+  background-color: lightgray;
+}
+
+.two {
+  width: 220px;
+  height: 450px;
+  background-color: aquamarine;
+}
+
+.three {
+  width: 270px;
+  height: 600px;
+  background-color: #e0e0e0;
+}
+
+.four {
+  color: azure;
+  width: 400px;
+  height: 500px;
+  font-size: 24px;
+  background-color: red;
+  animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+  0%   { background-color: red; }
+  50%  { background-color: yellow; }
+  100% { background-color: green; }
+}
+
+.five {
+  width: 250px;
+  height: 550px;
+  background-color: #ccc;
+}
+
+.six {
+  width: 400px;
+  height: 400px;
+  background-color: #283618;
+  color: white;
+}
+
+.seven {
+  animation: bounce 2s infinite;
+  width: 300px;
+  height: 600px;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+}
+
+.height {
+  height: 800px;
+  width: 650px;
+  box-shadow: 0 0 20px #6e6d6b;
+}
+ul{
+  background-color: #b5e48c;
+  margin: 10px;
+}
+.section-title {
+  width: 100%;                  /* Le titre prend toute la largeur */
+  text-align: center;           /* Le texte est centré horizontalement */
+  font-size: 28px;              /* Taille du texte */
+  font-weight: bold;           /* Texte en gras */
+  color: black;                  /* Couleur du texte (gris foncé) */
+  margin: 40px 0 20px;          /* Espace au-dessus et en dessous */
+  position: relative;
+  background-color: #f0e9e9;           /* Nécessaire pour positionner les traits décoratifs */
+}
+.section-title::before {
+  left: 0;                      /* Collé au bord gauche */
+}
+.section-title::after {
+  right: 0;                     /* Collé au bord droit */
+}
+.conteneur {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      border: 2px solid #000;
+      margin: 50px auto;
+    }
+
+.ox {
+      width: 120px;
+      height: 120px;
+      line-height: 120px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      position: absolute;
+    }
+
+    .une {
+      background-color: #C2B0F9;
+      left: 30px;
+      top: 30px;
+    }
+
+    .deux {
+      background-color: #CBFCB9;
+      left: 60px;
+      top: 60px;
+    }
+
+    .trois {
+      background-color: #F2A3BB;
+      left: 90px;
+      top: 90px;
+    }
+    body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* hauteur min = 100% de l'écran */
+  margin: 0;
+  background-color: beige;
+}
+
+main {
+  flex: 1; /* prend toute la hauteur restante */
+}
+
+/* footer design */
+.footer {
+  background-color: wheat;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
